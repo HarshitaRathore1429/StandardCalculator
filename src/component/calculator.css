@@ -1,0 +1,67 @@
+.calc-app{ 
+    border:2px solid;
+    border-radius: 8px;
+    padding:15px;
+    position: absolute;
+    background-color: #a2bbcf;
+    left: 35%;
+    top:10%;
+  }
+  
+  input{
+    width:300px;
+    margin: 9px;
+    padding:8px;
+    border:solid black;
+    border-radius: 3px;
+  }
+  .keypad{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:2px 2px;
+    padding:4px;
+  }
+  #backspace{
+    grid-column: 1/3;
+    grid-row:1;
+  }
+  #clear{
+    grid-column:3/5;
+    grid-row:1;
+  }
+  h4{
+    text-align:center;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+  }
+  .keypad button{
+  padding:10px;
+  border-radius: 5px;
+  }
+  .keypad #subs, #add, #backspace, #result, #multiply, #mod, #clear, #divide, #sqrt, #root,#sin,#cos,#tan,#log,#π,#log1,#power,#fact{
+    background-color: 	#205b7a;
+    color:white;
+  }
+  .keypad #subs:hover, #add:hover, #backspace:hover, #result:hover, #multiply:hover, #mod:hover, #clear:hover, #divide:hover,#root:hover,#sqrt:hover,#root:hover,#sin:hover,#cos:hover,#tan:hover,#log:hover,#π:hover,#log1:hover,#power:hover,#fact:hover{
+    background-color: white;
+    color:black;
+  }
+  @media screen and (max-width:450px) {
+    .calc-app{
+      margin-top: 15%;
+      left: 0%;
+      width: 100vw;
+      padding: 1px;
+      font-size: 10px;
+    }
+    input{
+      width: 250px;
+    }
+    .keypad button{
+      font-size: 10px;
+      
+    }
+
+  }
+  
